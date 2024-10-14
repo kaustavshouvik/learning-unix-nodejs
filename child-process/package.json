@@ -1,0 +1,14 @@
+{
+  "name": "child-process",
+  "description": "",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.7.5"
+  }
+}
