@@ -1,6 +1,12 @@
-import Cpeak from 'cpeak';
+const Cpeak = require('cpeak');
 
 const server = new Cpeak();
+
+process.on('message', (data) => {
+  console.log(`In child: Got message from parent -> "${data}"`);
+});
+
+process.send('Message from child');
 
 server.route('get', '/', (req, res) => {
   res.json({ message: 'This is some text.' });
